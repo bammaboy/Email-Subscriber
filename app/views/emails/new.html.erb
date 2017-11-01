@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="form_div_style">
+      <h2> Enter your Email address and be first subscriber</h2>
+      <%= form_for @email do |f| %>
+          <%= f.text_field :address, class:"form-control"%>
+          <br>
+          <%= f.submit class:"btn btn-success"%>
+          <%= link_to "Main page", root_path, class:"btn btn-primary"%>
+      <%end%>
+    </div>
+  </body>
+</html>
